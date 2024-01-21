@@ -13,6 +13,20 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      maxWidth: {
+        "8xl": "80%",
+      },
+      colors: {
+        asphalt: "#111",
+      },
+      fontFamily: {
+        oswald: ["var(--font-oswald)"],
+        karla: ["var(--font-karla)"],
+        outfit: ["var(--font-outfit)"],
+        montserrat: ["var(--font-montserrat)"],
+        noto: ["var(--font-noto-sans)"],
+        crimson: ["var(--font-crimson-pro)"],
+      },
     },
   },
   plugins: [],
