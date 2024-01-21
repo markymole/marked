@@ -8,7 +8,7 @@ interface buttonProps {
   children?: ReactNode;
 }
 
-const index = ({
+const Button = ({
   text = "Call to action",
   onClick,
   className,
@@ -21,7 +21,7 @@ const index = ({
     >
       <div
         className={twMerge(
-          "font-outfit relative z-20 -translate-y-1 rounded-lg bg-amber-500 px-4 py-2 font-medium text-white group-active:-translate-y-0",
+          "relative z-20 -translate-y-1 rounded-lg bg-amber-500 px-4 py-2 font-outfit font-medium text-white group-active:-translate-y-0",
         )}
       >
         {text}
@@ -32,4 +32,4 @@ const index = ({
   );
 };
 
-export default index;
+export default Button;

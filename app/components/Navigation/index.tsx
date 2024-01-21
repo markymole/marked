@@ -1,5 +1,6 @@
 "use client";
 
+import CustomContainer from "@/app/molecules/CustomContainer";
 import Logo from "@/app/molecules/Logo";
 import Menu from "@/app/molecules/Menu";
 import NavLink from "@/app/molecules/NavLink";
@@ -12,10 +13,10 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 z-50 w-full ">
       <div className="relative z-50 border-b bg-white">
-        <div className="max-w-8xl mx-auto flex items-center justify-between py-4 lg:py-6">
+        <CustomContainer className="flex items-center justify-between py-4 lg:py-6">
           <Logo />
           <Menu isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
-        </div>
+        </CustomContainer>
       </div>
       <div
         className={twMerge(
@@ -28,7 +29,7 @@ const Navigation = () => {
         <div className="relative w-full transform shadow-md lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:shadow-none">
           <ul
             className={twMerge(
-              "max-w-8xl mx-auto flex flex-col items-end py-4 text-end transition-all duration-500 ease-in-out lg:p-20",
+              "mx-auto flex max-w-8xl flex-col items-end py-4 text-end transition-all duration-500 ease-in-out lg:p-20",
               isOpen
                 ? "opacity-100 delay-0 lg:delay-200"
                 : "translate-x-40 opacity-0",
@@ -38,7 +39,7 @@ const Navigation = () => {
             <NavLink text="About" />
             <NavLink text="Works" />
             <NavLink text="Contact" />
-            <li className="font-karla text-asphalt mt-4 hidden font-light lg:block">
+            <li className="mt-4 hidden font-karla font-light text-asphalt lg:block">
               Looking for my previous porfolio? Click{" "}
               <a
                 className="text-amber-500 underline"

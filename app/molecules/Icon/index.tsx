@@ -8,7 +8,7 @@ interface buttonProps {
   children?: ReactNode;
 }
 
-const index = ({ className, children, href }: buttonProps) => {
+const Icon = ({ className, children, href }: buttonProps) => {
   return (
     <Link
       className={twMerge(
@@ -22,4 +22,4 @@ const index = ({ className, children, href }: buttonProps) => {
   );
 };
 
-export default index;
+export default Icon;
