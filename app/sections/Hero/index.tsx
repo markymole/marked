@@ -7,7 +7,7 @@ import React from "react";
 
 const index = () => {
   return (
-    <CustomContainer className="grid min-h-screen grid-cols-2 items-center gap-10">
+    <CustomContainer className="mt-16 grid min-h-screen grid-cols-1 items-center gap-10 md:mt-0 lg:grid-cols-2">
       <div className="text-asphalt">
         <CustomText type="custom" className="text-5xl">
           👋

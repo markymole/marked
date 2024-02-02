@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   description: "Web develop",
 };
 
+import "@splidejs/react-splide/css";
+import "@splidejs/react-splide/css/core";
+
 export default function RootLayout({
   children,
 }: Readonly<{

@@ -24,8 +24,7 @@ const Button = ({
           "relative z-20 -translate-y-1 rounded-lg bg-amber-500 px-4 py-2 font-outfit font-medium text-white group-active:-translate-y-0",
         )}
       >
-        {text}
-        {children}
+        {children ? children : text}
       </div>
       <span className="absolute bottom-0 left-0 z-0 block h-full w-full rounded-lg bg-amber-600"></span>
     </button>

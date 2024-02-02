@@ -4,11 +4,19 @@ import CustomContainer from "@/app/molecules/CustomContainer";
 import Logo from "@/app/molecules/Logo";
 import Menu from "@/app/molecules/Menu";
 import NavLink from "@/app/molecules/NavLink";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("overflow-y-hidden");
+    } else {
+      document.body.classList.remove("overflow-y-hidden");
+    }
+  }, [isOpen]);
 
   return (
     <nav className="fixed top-0 z-50 w-full ">

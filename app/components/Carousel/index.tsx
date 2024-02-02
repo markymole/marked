@@ -1,28 +1,31 @@
 "use client";
 
-import Image from "next/image";
-// @ts-ignore
-import { Splide, SplideSlide } from "@splidejs/react-splide";
+import images from "./image-data";
 import React from "react";
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+
+import CustomImage from "@/app/molecules/CustomImage";
+import CarouselButton from "@/app/molecules/Button/CarouselButton.tsx";
 
 const Carousel = () => {
   const splideOptions = {
-    pagination: false,
-    isNavigation: false,
+    type: "fade",
+    rewind: true,
     arrows: false,
+    pagination: false,
+    height: "35rem",
+    autoplay: true,
+    interval: 5000,
   };
+
   return (
     <div>
-      <Splide options={splideOptions}>
-        <SplideSlide>
-          <Image
-            src="/images/cks-ojt.jpg"
-            alt=""
-            width={1000}
-            height={1000}
-            className="h-full w-full rounded-xl"
-          />
-        </SplideSlide>
+      <Splide options={splideOptions} aria-label="My Favorite Images">
+        {images?.map((image: string, index: number) => (
+          <SplideSlide key={`Image-${1 + index.toString()}`}>
+            <CustomImage width={500} height={500} src={image} alt="Image 1" />
+          </SplideSlide>
+        ))}
       </Splide>
     </div>
   );

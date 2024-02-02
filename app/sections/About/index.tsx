@@ -1,17 +1,21 @@
-import Image from "next/image";
 import React from "react";
 import CustomContainer from "@/app/molecules/CustomContainer";
 import CustomText from "@/app/molecules/CustomText";
 import Carousel from "@/app/components/Carousel";
+import Bar from "@/app/molecules/Bar";
+import Button from "@/app/molecules/Button";
 
 const index = () => {
   return (
-    <CustomContainer className="grid grid-cols-2 items-center gap-20 py-20">
+    <CustomContainer className="grid grid-cols-2 gap-20 py-20">
       <div className="">
         <Carousel />
       </div>
       <div>
-        <CustomText type="heading">About Me</CustomText>
+        <div className="w-fit">
+          <CustomText type="heading">My Story</CustomText>
+          <Bar />
+        </div>
         <CustomText type="description">
           I got into web development back in college and scored myself a
           Bachelor&apos;s in it. Funny thing is, I didn&apos;t know squat about
@@ -26,6 +30,7 @@ const index = () => {
           different tools and tricks my way, and I&apos;m soaking it all in.
           That&apos;s how I&apos;ve been growing as a web developer.
         </CustomText>
+        <Button className="mt-6">Download Resume</Button>
       </div>
     </CustomContainer>
   );
