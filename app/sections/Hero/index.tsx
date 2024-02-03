@@ -7,12 +7,12 @@ import React from "react";
 
 const index = () => {
   return (
-    <CustomContainer className="mt-16 grid min-h-screen grid-cols-1 items-center gap-10 md:mt-0 lg:grid-cols-2">
+    <CustomContainer className="mt-16 grid min-h-screen grid-cols-1 items-center gap-10 md:mt-0 xl:grid-cols-2">
       <div className="text-asphalt">
         <CustomText type="custom" className="text-5xl">
           👋
         </CustomText>
-        <CustomText type="heading">
+        <CustomText type="heading" className="ms-0 lg:w-2/3 xl:w-full">
           Hey there, I&apos;m Mark—Your friendly{" "}
           <span className="text-amber-500 underline">web developer</span>
         </CustomText>
@@ -22,10 +22,10 @@ const index = () => {
           ready to make your mark or an established business seeking a digital
           facelift, Let&apos;s build something extraordinary together.
         </CustomText>
-        <Button className="mt-4" text="Let's talk" />
-        <Socials className="absolute bottom-20" />
+        <Button hierarchy="primary" className="mt-4" text="Let's talk" />
+        <Socials className="mt-20 lg:absolute lg:bottom-20 lg:mt-0" />
       </div>
-      <div></div>
+      <div className="hidden lg:block"></div>
     </CustomContainer>
   );
 };

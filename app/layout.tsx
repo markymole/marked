@@ -10,8 +10,9 @@ import {
 } from "./theme/fonts/fonts";
 
 export const metadata: Metadata = {
-  title: "Marked",
-  description: "Web develop",
+  title: "Marked | Web Developer",
+  description:
+    "HEY THERE, I'M MARK—YOUR FRIENDLY WEB DEVELOPER. I specialize in bringing your ideas to life, crafting bespoke websites that not only captivate but convert. Whether you're a startup ready to make your mark or an established business seeking a digital facelift, Let's build something extraordinary together.",
 };
 
 import "@splidejs/react-splide/css";

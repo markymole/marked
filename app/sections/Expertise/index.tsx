@@ -9,7 +9,7 @@ import { firstSet, secondSet } from "./techstacks.data";
 const Expertise = () => {
   return (
     <CustomContainer className="">
-      <div className="mx-auto w-2/3 text-center">
+      <div className="mx-auto w-full text-center lg:w-2/3">
         <CustomText type="heading">
           &quot;
           <span className="text-amber-500 underline">Follow excellence</span>

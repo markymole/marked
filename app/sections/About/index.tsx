@@ -2,19 +2,17 @@ import React from "react";
 import CustomContainer from "@/app/molecules/CustomContainer";
 import CustomText from "@/app/molecules/CustomText";
 import Carousel from "@/app/components/Carousel";
-import Bar from "@/app/molecules/Bar";
 import Button from "@/app/molecules/Button";
 
 const index = () => {
   return (
-    <CustomContainer className="grid grid-cols-2 gap-20 py-20">
+    <CustomContainer className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-10 lg:py-20 xl:gap-14">
       <div className="">
         <Carousel />
       </div>
       <div>
         <div className="w-fit">
-          <CustomText type="heading">My Story</CustomText>
-          <Bar />
+          <CustomText type="heading">About Me</CustomText>
         </div>
         <CustomText type="description">
           I got into web development back in college and scored myself a
@@ -30,7 +28,9 @@ const index = () => {
           different tools and tricks my way, and I&apos;m soaking it all in.
           That&apos;s how I&apos;ve been growing as a web developer.
         </CustomText>
-        <Button className="mt-6">Download Resume</Button>
+        <Button hierarchy="primary" className="mt-6">
+          Download Resume
+        </Button>
       </div>
     </CustomContainer>
   );

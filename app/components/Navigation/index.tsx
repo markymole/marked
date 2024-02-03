@@ -6,6 +6,7 @@ import Menu from "@/app/molecules/Menu";
 import NavLink from "@/app/molecules/NavLink";
 import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
+import Switcher from "../Switcher";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,10 @@ const Navigation = () => {
       <div className="relative z-50 border-b bg-white">
         <CustomContainer className="flex items-center justify-between py-4 lg:py-6">
           <Logo />
-          <Menu isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
+          <div className="flex items-center gap-4">
+            <Switcher />
+            <Menu isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
+          </div>
         </CustomContainer>
       </div>
       <div
@@ -34,7 +38,7 @@ const Navigation = () => {
             : "pointer-events-none opacity-0",
         )}
       >
-        <div className="relative w-full transform shadow-md lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:shadow-none">
+        <div className="relative w-full transform px-4 shadow-md md:px-14 lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:shadow-none">
           <ul
             className={twMerge(
               "mx-auto flex max-w-8xl flex-col items-end py-4 text-end transition-all duration-500 ease-in-out lg:p-20",
@@ -45,7 +49,7 @@ const Navigation = () => {
           >
             <NavLink text="Home" />
             <NavLink text="About" />
-            <NavLink text="Works" />
+            <NavLink text="Projects" />
             <NavLink text="Contact" />
             <li className="mt-4 hidden font-karla font-light text-asphalt lg:block">
               Looking for my previous porfolio? Click{" "}

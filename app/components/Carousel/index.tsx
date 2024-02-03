@@ -14,6 +14,9 @@ const Carousel = () => {
     arrows: false,
     pagination: false,
     height: "35rem",
+    breakpoints: {
+      600: { height: "auto" },
+    },
     autoplay: true,
     interval: 5000,
   };

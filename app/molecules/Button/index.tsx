@@ -1,33 +1,42 @@
-import React, { ReactNode } from "react";
+import React, { ComponentPropsWithoutRef, ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
+import { buttonVariant, buttonbackgroundVariant } from "./Button.styles";
 
-interface buttonProps {
+type NativeButtonProps = ComponentPropsWithoutRef<"button"> &
+  ComponentPropsWithoutRef<"a">;
+
+interface buttonProps extends NativeButtonProps {
+  hierarchy: "primary" | "secondary";
   text?: string;
+  href?: string;
   onClick?: () => void;
   className?: string;
   children?: ReactNode;
 }
 
 const Button = ({
+  hierarchy = "primary",
   text = "Call to action",
+  href,
   onClick,
   className,
   children,
+  ...props
 }: buttonProps) => {
+  const ButtonElement = href ? "a" : "button";
+
   return (
-    <button
-      className={twMerge("group relative mt-1", className)}
+    <ButtonElement
+      href={href}
+      className={twMerge("group relative mt-1 w-fit", className)}
       onClick={onClick}
+      {...props}
     >
-      <div
-        className={twMerge(
-          "relative z-20 -translate-y-1 rounded-lg bg-amber-500 px-4 py-2 font-outfit font-medium text-white group-active:-translate-y-0",
-        )}
-      >
+      <div className={twMerge(buttonVariant({ hierarchy }))}>
         {children ? children : text}
       </div>
-      <span className="absolute bottom-0 left-0 z-0 block h-full w-full rounded-lg bg-amber-600"></span>
-    </button>
+      <span className={twMerge(buttonbackgroundVariant({ hierarchy }))}></span>
+    </ButtonElement>
   );
 };
 
