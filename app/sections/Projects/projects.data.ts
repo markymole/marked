@@ -2,7 +2,7 @@ const projects = [
   {
     title: "Minindal",
     description:
-      "The premier web application for faster searching of Kapampangan cuisines and delicacies! Our platform is an open directory that allows users to easily find local Kapampangan food businesses around them, as well as enables Kapampangan food business owners to apply for a listing.",
+      "The definitive web application for quick access to Kapampangan cuisines and delicacies! This platform serves as an open directory, simplifying the search for local Kapampangan food businesses and offering a seamless process for owners to apply for listings.",
     link: "https://www.minindal.com/",
     githubLink: "https://github.com/markymole/minindal",
     techstacks: ["React", "Laravel", "Tailwind", "MySQL", "Google Maps API"],
@@ -13,7 +13,7 @@ const projects = [
   {
     title: "Kapampangan Translator",
     description:
-      "This web app was developed on the initiative of the Holy Angel University Center for Kapampangan Studies to address the common problem of non-Kapampangans to communicate to Kapampangan using the latter's language. It is interactive to encourage everyone to contribute to it and help expand its vocabulary, thus making it an endless work in progress.",
+      "Developed in partnership with the Center for Kapampangan Studies, this web app addresses the challenge non-Kapampangans face in communicating with Kapampangan speakers. It's designed to be interactive, encouraging contributions to expand the language's vocabulary, making it an endless work in progress.",
     link: "https://kapampangancenter.org/kapampangantranslator/",
     githubLink: "https://github.com/markymole/cks-glossary-files",
     techstacks: ["PHP", "Jquery", "MySQL", "Bootstrap"],

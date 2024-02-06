@@ -63,9 +63,11 @@ const TimelineCard = ({
         transition={{ duration: 0.5, delay: 0.1 }}
         viewport={{ once: true }}
       >
-        <div className="relative z-10 flex flex-col gap-4 rounded-lg border border-gray-300 bg-white p-4 transition-all duration-200 ease-out hover:-translate-y-1.5 hover:translate-x-1.5 hover:cursor-default hover:border-amber-500 md:p-8 ">
+        <div className="relative z-10 flex flex-col gap-4 rounded-lg border border-gray-300 bg-white p-4 transition-all duration-200 ease-out hover:-translate-y-1.5 hover:translate-x-1.5 hover:cursor-default hover:border-amber-500 md:p-8 dark:bg-asphalt ">
           <div className="flex flex-wrap items-center justify-between">
-            <h5 className="font-karla text-xl font-semibold">{title}</h5>
+            <h5 className="font-karla text-xl font-semibold dark:text-white">
+              {title}
+            </h5>
             <CustomText type="description">{duration}</CustomText>
           </div>
           <CustomText type="description">{description}</CustomText>

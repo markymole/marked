@@ -21,7 +21,7 @@ const Navigation = () => {
 
   return (
     <nav className="fixed top-0 z-50 w-full ">
-      <div className="relative z-50 border-b bg-white">
+      <div className="darkmode relative z-50 border-b bg-white dark:border-gray-300 dark:bg-asphalt">
         <CustomContainer className="flex items-center justify-between py-4 lg:py-6">
           <Logo />
           <div className="flex items-center gap-4">
@@ -32,7 +32,7 @@ const Navigation = () => {
       </div>
       <div
         className={twMerge(
-          "relative z-40 h-fit w-full bg-gradient-to-r from-white/80 to-white transition-all duration-300 ease-in-out lg:fixed lg:left-0 lg:top-0 lg:block lg:h-full",
+          "relative z-40 h-fit w-full bg-gradient-to-r from-white/80 to-white transition-all duration-300 ease-in-out lg:fixed lg:left-0 lg:top-0 lg:block lg:h-full dark:from-asphalt/80 dark:to-asphalt",
           isOpen
             ? "opacity-100 backdrop-blur-sm"
             : "pointer-events-none opacity-0",
@@ -51,7 +51,7 @@ const Navigation = () => {
             <NavLink text="About" />
             <NavLink text="Projects" />
             <NavLink text="Contact" />
-            <li className="mt-4 hidden font-karla font-light text-asphalt lg:block">
+            <li className="mt-4 hidden font-karla font-light text-asphalt lg:block dark:text-white">
               Looking for my previous porfolio? Click{" "}
               <a
                 className="text-amber-500 underline"

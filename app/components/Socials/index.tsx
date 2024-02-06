@@ -14,13 +14,13 @@ const index = ({ className }: socialsProps) => {
   return (
     <div id="socials" className={twMerge(className, "flex items-center gap-4")}>
       <Icon>
-        <FaLinkedinIn size={28} />
+        <FaLinkedinIn size={28} className="dark:fill-current dark:text-white" />
       </Icon>
       <Icon>
-        <FaFacebookF size={28} />
+        <FaFacebookF size={28} className="dark:fill-current dark:text-white" />
       </Icon>
       <Icon>
-        <FaGithub size={28} />
+        <FaGithub size={28} className="dark:fill-current dark:text-white" />
       </Icon>
     </div>
   );

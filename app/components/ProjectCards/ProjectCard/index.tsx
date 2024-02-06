@@ -34,17 +34,19 @@ const ProjectCard = ({
           width={1000}
           height={1000}
           alt={title}
-          className="h-full w-full border border-gray-300 shadow-lg shadow-gray-300/50"
+          className="h-full w-full border border-gray-300 shadow-lg shadow-gray-300/50 dark:shadow-none"
         />
       </motion.div>
       <div className="flex flex-col gap-4">
-        <h5 className="font-outfit text-3xl font-medium">{title}</h5>
+        <h5 className="font-outfit text-3xl font-medium text-asphalt dark:text-white">
+          {title}
+        </h5>
         <CustomText type="description">{description}</CustomText>
         <div className="flex flex-wrap items-center gap-3">
           {techstacks?.map((techstack, index) => (
             <div
               key={`techstack-${techstack}-${1 + index.toString()}`}
-              className="w-fit rounded-full border border-gray-300 bg-gray-100 px-4 py-1 font-outfit text-gray-800"
+              className="w-fit rounded-full border border-gray-300 bg-gray-100 px-4 py-1 font-outfit text-gray-800 dark:border-gray-300 dark:bg-black/80 dark:text-white dark:backdrop-blur-md"
             >
               {techstack}
             </div>

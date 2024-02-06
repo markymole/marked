@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Navigation />
-      <main>
+      <main className="darkmode overflow-x-hidden bg-white md:overflow-x-visible dark:bg-asphalt">
         <Sidebar />
         <Hero />
         <About />

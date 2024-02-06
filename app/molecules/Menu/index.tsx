@@ -19,13 +19,13 @@ const Menu = ({ isOpen, onClick }: menuProps) => {
           ></span>
           <span
             className={twMerge(
-              "z-0 block h-1 w-8 rounded-sm bg-asphalt transition-all duration-300 ease-in-out",
+              "z-0 block h-1 w-8 rounded-sm bg-asphalt transition-all duration-300 ease-in-out dark:bg-white",
               isOpen ? "opacity-0" : "opacity-100",
             )}
           ></span>
           <span
             className={twMerge(
-              "z-0 block h-1 w-5 rounded-sm bg-asphalt transition-all duration-300 ease-in-out",
+              "z-0 block h-1 w-5 rounded-sm bg-asphalt transition-all duration-300 ease-in-out dark:bg-white",
               isOpen ? "w-8 -translate-y-3 -rotate-45" : "",
             )}
           ></span>

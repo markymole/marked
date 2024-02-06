@@ -13,7 +13,7 @@ const Icon = ({ className, children, href }: buttonProps) => {
     <Link
       className={twMerge(
         className,
-        "p-1 opacity-80 transition-all duration-200 ease-out hover:opacity-100",
+        "p-1 opacity-70 transition-all duration-300 ease-out hover:opacity-100",
       )}
       href={href ? href : ""}
     >

@@ -4,7 +4,7 @@ export const workexperiencedata = [
     company: "Center for Kapampangan Studies",
     positon: "Web Developer",
     description:
-      'During my internship at the Center for Kapampangan, I took on the position of Web Developer and created two helpful web apps. The first one is a language-neutral translator into Kapampangan, while the other is "Minindal," a casual guide to Kapampangan food. These initiatives enhanced my technological abilities and demonstrated my love of fusing coding with cultural elements.',
+      "At the Centre for Kapampangan Studies, my internship as a Web Developer provided the opportunity to lead the development of the 'Kapampangan Translator' web app. Driven by a passion for technology and cultural preservation, this project aimed to overcome linguistic barriers while showcasing the richness of Kapampangan heritage. Through innovative approaches, it facilitated communication and celebrated our cultural legacy.",
     duration: "Sep 2022 - Feb 2023",
   },
   {

@@ -9,20 +9,26 @@ import { firstSet, secondSet } from "./techstacks.data";
 const Expertise = () => {
   return (
     <CustomContainer className="">
-      <div className="mx-auto w-full text-center lg:w-2/3">
-        <CustomText type="heading">
+      <div className="">
+        <CustomText
+          type="heading"
+          className="mx-auto w-full text-center lg:w-2/3"
+        >
           &quot;
           <span className="text-amber-500 underline">Follow excellence</span>
           <br />
           and success will chase you down&quot;
         </CustomText>
-        <CustomText type="description">
-          Over the past few years, I have dedicated myself to becoming a skilled
-          React developer. Alongside my expertise in React.js, I have also
-          nurtured my passion for graphic design and illustration, utilizing
-          Adobe Illustrator to create visually captivating designs. This
-          combination of skills has enriched my proficiency in web development
-          and design.
+        <CustomText
+          type="description"
+          className="mx-auto w-full text-center lg:w-10/12"
+        >
+          Embarking on a journey of skill refinement and innovation. I&apos;ve
+          focused on making my development process efficient and effective,
+          honing essential skills across pivotal areas like front-end and
+          back-end development, API integration, and responsive design. Using
+          what I&apos;ve learned, I&apos;ve worked hard to make a real impact
+          online, creating websites and apps that leave a mark.
         </CustomText>
       </div>
       <div id="techstacks">

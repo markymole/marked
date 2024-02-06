@@ -14,7 +14,7 @@ const Form = () => {
       <Input name="Project Description" type="textarea" placeholder="" />
       <div className="flex flex-col-reverse justify-between gap-6 md:flex-row md:gap-0">
         <Button hierarchy="primary">Send Message</Button>
-        <p className="flex items-center gap-2 font-outfit text-asphalt/80">
+        <p className="flex items-center gap-2 font-outfit text-asphalt/80 dark:text-gray-300">
           <MdOutgoingMail size={24} />
           <a href="mailto:nmark.raphael07@gmail.com">nmark.raphael@gmail.com</a>
         </p>

@@ -8,7 +8,7 @@ export const buttonVariant = cva(
     variants: {
       hierarchy: {
         primary: ["bg-amber-500"],
-        secondary: ["bg-gray-900/95"],
+        secondary: ["darkmode bg-asphalt dark:bg-white dark:text-asphalt"],
       },
     },
   },
@@ -20,7 +20,7 @@ export const buttonbackgroundVariant = cva(
     variants: {
       hierarchy: {
         primary: ["bg-amber-600"],
-        secondary: ["bg-asphalt"],
+        secondary: ["darkmode bg-black dark:bg-gray-400"],
       },
     },
   },

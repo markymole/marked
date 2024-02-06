@@ -12,7 +12,7 @@ const NavLink = ({ text, onClick }: NavLinkProps) => {
     <li
       onClick={onClick}
       className={twMerge(
-        "font-oswald text-asphalt group w-full cursor-pointer py-3 text-end text-xl uppercase lg:w-fit lg:py-5 lg:text-4xl",
+        "group w-full cursor-pointer py-3 text-end font-oswald text-xl uppercase text-asphalt lg:w-fit lg:py-5 lg:text-4xl dark:text-white",
       )}
     >
       {text}
