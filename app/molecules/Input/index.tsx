@@ -1,4 +1,5 @@
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
 interface inputProps {
   name: string;
@@ -6,6 +7,7 @@ interface inputProps {
   label?: string;
   type: "text" | "number" | "email" | "textarea";
   placeholder?: string;
+  error?: string;
   disabled?: boolean;
   onChange?: (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -16,6 +18,7 @@ const Input = ({
   placeholder,
   name,
   label,
+  error,
   disabled = false,
   value,
   type,
@@ -24,7 +27,7 @@ const Input = ({
 }: inputProps) => {
   const InputType = type !== "textarea" ? "input" : "textarea";
   return (
-    <div className="">
+    <div>
       <label
         htmlFor={name}
         className="font-karla font-medium capitalize text-asphalt dark:text-white"
@@ -39,8 +42,12 @@ const Input = ({
         disabled={disabled}
         placeholder={placeholder ? placeholder : ""}
         onChange={onChange}
-        className="mt-2 w-full rounded-lg border border-gray-300 px-4 py-2 font-karla text-asphalt transition-all duration-300 ease-out focus:outline-2 focus:outline-asphalt"
+        className={twMerge(
+          "mt-2 w-full rounded-lg border  px-4 py-2 font-karla text-asphalt transition-all duration-300 ease-out focus:outline-2 focus:outline-asphalt",
+          error ? "border-red-600 placeholder-red-300" : "border-gray-300",
+        )}
       />
+      {error && <p className="mt-1 font-karla text-sm text-red-600">{error}</p>}
     </div>
   );
 };

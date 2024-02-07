@@ -25,6 +25,13 @@ const Form = () => {
     projectDescription: "",
   });
 
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    projectDescription: "",
+  });
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
@@ -37,6 +44,21 @@ const Form = () => {
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
+
+    const newErrors = {
+      name: formData.name ? "" : "Name is required",
+      email: formData.email ? "" : "Email is required",
+      subject: formData.subject ? "" : "Subject is required",
+      projectDescription: formData.projectDescription
+        ? ""
+        : "Project Description is required",
+    };
+
+    if (Object.values(newErrors).some((error) => error !== "")) {
+      setErrors(newErrors);
+      return;
+    }
+
     setLoading(true);
 
     if (form.current) {
@@ -80,6 +102,12 @@ const Form = () => {
       subject: "",
       projectDescription: "",
     });
+    setErrors({
+      name: "",
+      email: "",
+      subject: "",
+      projectDescription: "",
+    });
   };
 
   useEffect(() => {
@@ -104,6 +132,7 @@ const Form = () => {
             label="Name"
             placeholder="Your name"
             value={formData.name}
+            error={errors.name}
             onChange={handleChange}
           />
           <Input
@@ -112,6 +141,7 @@ const Form = () => {
             label="Email"
             placeholder="example@address.com"
             value={formData.email}
+            error={errors.email}
             onChange={handleChange}
           />
         </div>
@@ -120,6 +150,7 @@ const Form = () => {
           label="Subject"
           type="text"
           value={formData.subject}
+          error={errors.subject}
           onChange={handleChange}
         />
         <Input
@@ -128,6 +159,7 @@ const Form = () => {
           type="textarea"
           placeholder=""
           value={formData.projectDescription}
+          error={errors.projectDescription}
           onChange={handleChange}
         />
         <div className="flex flex-col-reverse justify-between gap-6 md:flex-row md:gap-0">
