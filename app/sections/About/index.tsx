@@ -6,7 +6,10 @@ import Button from "@/app/molecules/Button";
 
 const index = () => {
   return (
-    <CustomContainer className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-10 lg:py-20 xl:gap-14">
+    <CustomContainer
+      className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-10 lg:py-20 xl:gap-14"
+      id="about"
+    >
       <div className="">
         <Carousel />
       </div>

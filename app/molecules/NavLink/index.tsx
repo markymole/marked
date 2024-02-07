@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
 type NavLinkProps = {
@@ -7,12 +8,13 @@ type NavLinkProps = {
   onClick?: () => void;
 };
 
-const NavLink = ({ text, onClick }: NavLinkProps) => {
+const NavLink = ({ text, onClick, href }: NavLinkProps) => {
   return (
-    <li
+    <Link
+      href={href ? href : ""}
       onClick={onClick}
       className={twMerge(
-        "group w-full cursor-pointer py-3 text-end font-oswald text-xl uppercase text-asphalt lg:w-fit lg:py-5 lg:text-4xl dark:text-white",
+        "group w-full cursor-pointer py-3 text-end font-oswald text-xl uppercase text-asphalt dark:text-white lg:w-fit lg:py-5 lg:text-4xl",
       )}
     >
       {text}
@@ -21,7 +23,7 @@ const NavLink = ({ text, onClick }: NavLinkProps) => {
           "transitional-all mt-2 hidden h-1 w-0 bg-amber-500 duration-300 ease-in-out group-hover:w-full lg:block",
         )}
       ></span>
-    </li>
+    </Link>
   );
 };
 

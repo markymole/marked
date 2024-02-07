@@ -7,12 +7,12 @@ import Timeline from "@/app/components/Timeline";
 
 const Experience = () => {
   return (
-    <CustomContainer className="">
+    <CustomContainer id="experience">
       <div className="grid h-full grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-0">
         <div className="h-fit space-y-4 lg:sticky lg:top-28 lg:col-span-1 lg:pr-20">
           <CustomText
             type="custom"
-            className="font-outfit text-4xl font-semibold text-asphalt lg:text-5xl xl:text-6xl dark:text-white"
+            className="font-outfit text-4xl font-semibold text-asphalt dark:text-white lg:text-5xl xl:text-6xl"
           >
             Work Experience: Nurturing Skills and{" "}
             <span className="text-amber-500 underline">

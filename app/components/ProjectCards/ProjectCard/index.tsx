@@ -27,14 +27,14 @@ const ProjectCard = ({
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 1 }}
       >
         <CustomImage
           src={image}
           width={1000}
           height={1000}
           alt={title}
-          className="h-full w-full border border-gray-300 shadow-lg shadow-gray-300/50 dark:shadow-none"
+          className="h-full w-full border border-gray-300 shadow-lg shadow-gray-300/50 dark:border-transparent dark:shadow-none"
         />
       </motion.div>
       <div className="flex flex-col gap-4">

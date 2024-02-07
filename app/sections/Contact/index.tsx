@@ -7,7 +7,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <CustomContainer>
+    <CustomContainer id="contact">
       <div className="mx-auto w-full space-y-2 lg:w-3/4">
         <Badge text="Contact" />
         <CustomText type="heading">

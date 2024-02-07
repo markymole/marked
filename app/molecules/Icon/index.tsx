@@ -16,6 +16,7 @@ const Icon = ({ className, children, href }: buttonProps) => {
         "p-1 opacity-70 transition-all duration-300 ease-out hover:opacity-100",
       )}
       href={href ? href : ""}
+      target="__blank"
     >
       {children}
     </Link>

@@ -26,17 +26,17 @@ const Button = ({
   const ButtonElement = href ? "a" : "button";
 
   return (
-    <ButtonElement
-      href={href}
-      className={twMerge("group relative mt-1 w-fit", className)}
-      onClick={onClick}
-      {...props}
-    >
-      <div className={twMerge(buttonVariant({ hierarchy }))}>
+    <div className={twMerge("group relative mt-1 w-fit", className)}>
+      <ButtonElement
+        className={twMerge(buttonVariant({ hierarchy }))}
+        href={href}
+        onClick={onClick}
+        {...props}
+      >
         {children ? children : text}
-      </div>
+      </ButtonElement>
       <span className={twMerge(buttonbackgroundVariant({ hierarchy }))}></span>
-    </ButtonElement>
+    </div>
   );
 };
 

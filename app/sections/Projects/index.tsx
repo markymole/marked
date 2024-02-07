@@ -10,7 +10,7 @@ import Bar from "@/app/molecules/Bar";
 
 const Projects = () => {
   return (
-    <CustomContainer>
+    <CustomContainer id="projects">
       <div className="mx-auto w-fit">
         <CustomText type="heading">Projects</CustomText>
         <Bar></Bar>

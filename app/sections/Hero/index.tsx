@@ -22,7 +22,12 @@ const index = () => {
           ready to make your mark or an established business seeking a digital
           facelift, Let&apos;s build something extraordinary together.
         </CustomText>
-        <Button hierarchy="primary" className="mt-4" text="Let's talk" />
+        <Button
+          hierarchy="primary"
+          className="mt-4"
+          text="Let's talk"
+          href="#contact"
+        />
         <Socials className="mt-20 lg:absolute lg:bottom-20 lg:mt-0" />
       </div>
       <div className="hidden lg:block"></div>

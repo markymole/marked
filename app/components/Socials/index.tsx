@@ -13,13 +13,13 @@ interface socialsProps {
 const index = ({ className }: socialsProps) => {
   return (
     <div id="socials" className={twMerge(className, "flex items-center gap-4")}>
-      <Icon>
+      <Icon href="https://www.linkedin.com/in/mark-raphael-nuguid/">
         <FaLinkedinIn size={28} className="dark:fill-current dark:text-white" />
       </Icon>
-      <Icon>
+      <Icon href="https://www.facebook.com/markedopen">
         <FaFacebookF size={28} className="dark:fill-current dark:text-white" />
       </Icon>
-      <Icon>
+      <Icon href="https://github.com/markymole">
         <FaGithub size={28} className="dark:fill-current dark:text-white" />
       </Icon>
     </div>
