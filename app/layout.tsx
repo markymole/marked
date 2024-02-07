@@ -9,6 +9,8 @@ import {
   outfit,
 } from "./theme/fonts/fonts";
 
+import "@splidejs/react-splide/css";
+
 export const metadata: Metadata = {
   title: "Marked | Web Developer",
   description:

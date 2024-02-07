@@ -2,7 +2,7 @@
 
 import images from "./image-data";
 import React from "react";
-import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 import CustomImage from "@/app/molecules/CustomImage";
 import CarouselButton from "@/app/molecules/Button/CarouselButton.tsx";
