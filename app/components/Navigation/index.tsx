@@ -20,7 +20,7 @@ const Navigation = () => {
   }, [isOpen]);
 
   return (
-    <nav className="fixed top-0 z-50 w-full ">
+    <nav className="fixed top-0 z-50 w-full">
       <div className="darkmode relative z-50 border-b bg-white dark:border-gray-300 dark:bg-asphalt">
         <CustomContainer className="flex items-center justify-between py-4 lg:py-6">
           <Logo />
@@ -32,10 +32,10 @@ const Navigation = () => {
       </div>
       <div
         className={twMerge(
-          "relative z-40 h-fit w-full bg-gradient-to-r from-white/80 to-white transition-all duration-300 ease-in-out dark:from-asphalt/80 dark:to-asphalt lg:fixed lg:left-0 lg:top-0 lg:block lg:h-full",
+          "relative z-40 w-full bg-gradient-to-r from-white/80 to-white transition-all duration-300 ease-in-out dark:from-asphalt/80 dark:to-asphalt lg:fixed lg:left-0 lg:top-0 lg:block lg:h-full",
           isOpen
-            ? "opacity-100 backdrop-blur-sm"
-            : "pointer-events-none opacity-0",
+            ? "h-fit opacity-100 backdrop-blur-sm"
+            : "pointer-events-none h-0 opacity-0",
         )}
       >
         <div className="relative w-full transform px-4 pb-8 shadow-md md:px-14 md:pb-0 lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:shadow-none">
