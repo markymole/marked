@@ -31,7 +31,7 @@ const LogoSlider = ({ direction, logos }: sliderProps) => {
       <Splide options={splideOptions} extensions={{ AutoScroll }}>
         {logos?.map((logo, index) => (
           <SplideSlide key={`Logo-${logo}`}>
-            <div className="flex h-32 w-fit items-center justify-center rounded-lg border border-gray-300 px-5 dark:bg-white lg:h-36">
+            <div className="flex h-32 w-fit items-center justify-center rounded-lg border border-gray-300 px-5 shadow-lg dark:bg-white lg:h-36">
               <Image
                 width={1000}
                 height={1000}

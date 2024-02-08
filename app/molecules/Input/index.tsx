@@ -43,7 +43,7 @@ const Input = ({
         placeholder={placeholder ? placeholder : ""}
         onChange={onChange}
         className={twMerge(
-          "mt-2 w-full rounded-lg border  px-4 py-2 font-karla text-asphalt transition-all duration-300 ease-out focus:outline-2 focus:outline-asphalt",
+          "mt-2 w-full rounded-lg border px-4 py-2 font-karla text-asphalt transition-all duration-300 ease-out focus:outline-2 focus:outline-asphalt",
           error ? "border-red-600 placeholder-red-300" : "border-gray-300",
         )}
       />

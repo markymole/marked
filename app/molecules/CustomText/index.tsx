@@ -24,7 +24,7 @@ const CustomText = ({ type, children, className }: textProps) => {
       return (
         <h1
           className={twMerge(
-            "py-5 font-oswald text-4xl font-medium uppercase leading-tight text-asphalt md:text-5xl dark:text-white",
+            "py-5 font-oswald text-4xl font-medium uppercase leading-tight text-asphalt dark:text-white md:text-5xl",
             className,
           )}
         >
@@ -46,7 +46,7 @@ const CustomText = ({ type, children, className }: textProps) => {
       return (
         <p
           className={twMerge(
-            "font-karla text-base font-light text-gray-700 md:text-lg dark:text-gray-300",
+            "font-outfit text-base font-light text-gray-900 dark:text-gray-300 md:text-lg",
             className,
           )}
         >
@@ -59,7 +59,7 @@ const CustomText = ({ type, children, className }: textProps) => {
       return (
         <p
           className={twMerge(
-            "font-karla text-lg font-light text-gray-700 dark:text-gray-300",
+            "font-outfit text-lg font-light text-gray-700 dark:text-gray-300",
             className,
           )}
         >
