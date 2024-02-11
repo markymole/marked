@@ -8,9 +8,17 @@ interface ImageProps {
   src: string;
   alt: string;
   className?: string;
+  onClick?: () => void;
 }
 
-const CustomImage = ({ width, height, src, alt, className }: ImageProps) => {
+const CustomImage = ({
+  width,
+  height,
+  src,
+  alt,
+  className,
+  onClick,
+}: ImageProps) => {
   return (
     <>
       <Image
@@ -19,6 +27,7 @@ const CustomImage = ({ width, height, src, alt, className }: ImageProps) => {
         height={height}
         alt={alt}
         className={twMerge(className, "h-full w-full rounded-lg object-cover")}
+        onClick={onClick}
       />
     </>
   );

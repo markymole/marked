@@ -9,7 +9,7 @@ const Experience = () => {
   return (
     <CustomContainer id="experience">
       <div className="grid h-full grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-0">
-        <div className="h-fit space-y-4 lg:sticky lg:top-28 lg:col-span-1 lg:pr-20">
+        <div className="h-fit space-y-6 lg:sticky lg:top-28 lg:col-span-1 lg:pr-20">
           <CustomText
             type="custom"
             className="font-outfit text-4xl font-semibold text-asphalt dark:text-white lg:text-5xl xl:text-6xl"

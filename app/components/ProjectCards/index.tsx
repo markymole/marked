@@ -17,6 +17,7 @@ interface Project {
   githubLink?: string;
   techstacks?: string[];
   image: string;
+  featuredImage: string;
 }
 
 const ProjectCards = ({ type = "default", data }: projectCardProps) => {
@@ -41,7 +42,7 @@ const ProjectCards = ({ type = "default", data }: projectCardProps) => {
                 link={project.link}
                 githubLink={project.githubLink}
                 techstacks={project.techstacks}
-                image={project.image}
+                featuredImage={project.featuredImage}
               />
             </SplideSlide>
           ))}
@@ -60,7 +61,7 @@ const ProjectCards = ({ type = "default", data }: projectCardProps) => {
             link={project.link}
             githubLink={project.githubLink}
             techstacks={project.techstacks}
-            image={project.image}
+            featuredImage={project.featuredImage}
           />
         </div>
       ))}

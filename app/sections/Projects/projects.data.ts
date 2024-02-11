@@ -1,13 +1,15 @@
 const projects = [
   {
     title: "Minindal",
+    meta: "",
     description:
       "The definitive web application for quick access to Kapampangan cuisines and delicacies! This platform serves as an open directory, simplifying the search for local Kapampangan food businesses and offering a seamless process for owners to apply for listings.",
     link: "https://www.minindal.com/",
     githubLink: "https://github.com/markymole/minindal",
     techstacks: ["React", "Laravel", "Tailwind", "MySQL", "Google Maps API"],
-    image: "/images/projects/minindal.png",
+    images: ["/images/projects/minindal.png"],
     featured: true,
+    archived: false,
     featuredImage: "/images/projects/minindal.png",
   },
   {
@@ -17,8 +19,9 @@ const projects = [
     link: "https://kapampangancenter.org/kapampangantranslator/",
     githubLink: "https://github.com/markymole/cks-glossary-files",
     techstacks: ["PHP", "Jquery", "MySQL", "Bootstrap"],
-    image: "/images/projects/kapampangan-translator.png",
+    images: ["/images/projects/kapampangan-translator.png"],
     featured: true,
+    archived: false,
     featuredImage: "/images/projects/kapampangan-translator.png",
   },
   {
@@ -29,9 +32,29 @@ const projects = [
     link: "https://babybeast.vercel.app",
     githubLink: "https://github.com/markymole/babybeast",
     techstacks: ["React", "Bootstrap"],
-    image: "/images/projects/babybeast.png",
+    images: ["/images/projects/babybeast.png"],
     featured: false,
+    archived: false,
     featuredImage: "/images/projects/babybeast.png",
+  },
+  {
+    id: 4,
+    title: "ECDP Portal",
+    description:
+      "This custom-kanban inspired portal serves as the tracking control system of Enrod Copper Decor Products, that allows admin to monitor a purchase order status. Each product undergo different phases which are updated by a sub-admin.",
+    link: "https://www.portal-ecdp.org",
+    githubLink: "https://github.com/markymole/ecdp-src",
+    techstacks: ["React", "Laravel", "Tailwind", "MySQL"],
+    images: [
+      "/images/projects/ecdp-login.png",
+      "/images/projects/ecdp-dashboard.png",
+      "/images/projects/ecdp-po.png",
+      "/images/projects/ecdp-tracker.png",
+      "/images/projects/ecdp-report.png",
+    ],
+    featured: false,
+    archived: true,
+    featuredImage: "/images/projects/ecdp-login.png",
   },
 ];
 

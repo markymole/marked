@@ -7,18 +7,21 @@ import Expertise from "./sections/Expertise";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
+import Artworks from "./sections/Artworks";
+import FeaturedProjects from "./sections/FeaturedProjects";
 
 export default function Home() {
   return (
     <>
       <Navigation />
-      <main className="darkmode overflow-x-hidden bg-white md:overflow-x-visible dark:bg-asphalt">
+      <main className="darkmode overflow-x-hidden bg-white dark:bg-asphalt md:overflow-x-visible">
         <Sidebar />
         <Hero />
         <About />
         <Expertise />
         <Experience />
-        <Projects />
+        <FeaturedProjects />
+        <Artworks />
         <Contact />
         <Footer />
       </main>

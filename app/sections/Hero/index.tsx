@@ -24,7 +24,7 @@ const index = () => {
         </CustomText>
         <Button
           hierarchy="primary"
-          className="mt-4"
+          className="mt-8"
           text="Let's talk"
           href="#contact"
         />

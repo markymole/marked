@@ -1,6 +1,7 @@
 import Button from "@/app/molecules/Button";
 import CustomImage from "@/app/molecules/CustomImage";
 import CustomText from "@/app/molecules/CustomText";
+import Tag from "@/app/molecules/Tag";
 import { motion } from "framer-motion";
 import React from "react";
 
@@ -10,7 +11,7 @@ interface projectProps {
   link?: string;
   githubLink?: string;
   techstacks?: string[];
-  image: string;
+  featuredImage: string;
 }
 
 const ProjectCard = ({
@@ -19,7 +20,7 @@ const ProjectCard = ({
   link,
   githubLink,
   techstacks,
-  image,
+  featuredImage,
 }: projectProps) => {
   return (
     <div className="relative grid h-fit grid-cols-1 items-center gap-10 lg:grid-cols-2">
@@ -30,7 +31,7 @@ const ProjectCard = ({
         transition={{ duration: 1 }}
       >
         <CustomImage
-          src={image}
+          src={featuredImage}
           width={1000}
           height={1000}
           alt={title}
@@ -42,17 +43,15 @@ const ProjectCard = ({
           {title}
         </h5>
         <CustomText type="description">{description}</CustomText>
-        <div className="flex flex-wrap items-center gap-3">
+        <div className="flex flex-wrap items-center gap-2">
           {techstacks?.map((techstack, index) => (
-            <div
+            <Tag
               key={`techstack-${techstack}-${1 + index.toString()}`}
-              className="w-fit rounded-full border border-gray-300 bg-gray-100 px-4 py-1 font-outfit text-gray-800 dark:border-gray-300 dark:bg-black/80 dark:text-white dark:backdrop-blur-md"
-            >
-              {techstack}
-            </div>
+              tag={techstack}
+            />
           ))}
         </div>
-        <div className="mt-2 flex items-center gap-3">
+        <div className="mt-4 flex items-center gap-2">
           <Button
             hierarchy="primary"
             href={link}

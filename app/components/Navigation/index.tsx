@@ -47,7 +47,7 @@ const Navigation = () => {
                 : "translate-x-40 opacity-0",
             )}
           >
-            <NavLink text="Home" onClick={() => setIsOpen(!isOpen)} />
+            <NavLink text="Home" href="/" onClick={() => setIsOpen(!isOpen)} />
             <NavLink
               text="About"
               href="#about"
@@ -55,7 +55,7 @@ const Navigation = () => {
             />
             <NavLink
               text="Projects"
-              href="#projects"
+              href="/projects"
               onClick={() => setIsOpen(!isOpen)}
             />
             <NavLink

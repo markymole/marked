@@ -1,0 +1,15 @@
+export const artworkData = [
+  "/artworks/DA-1.png",
+  "/artworks/DA-2.png",
+  "/artworks/DA-5.png",
+  "/artworks/DA-6.png",
+  "/artworks/DA-7.png",
+  "/artworks/DA-8.png",
+  "/artworks/DA-9.png",
+  "/artworks/DA-11.png",
+  "/artworks/DA-12.png",
+  "/artworks/DA-13.png",
+  "/artworks/DA-15.png",
+  "/artworks/DA-17.png",
+  "/artworks/DA-19.png",
+];

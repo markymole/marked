@@ -31,7 +31,7 @@ const index = () => {
           different tools and tricks my way, and I&apos;m soaking it all in.
           That&apos;s how I&apos;ve been growing as a web developer.
         </CustomText>
-        <Button hierarchy="primary" className="mt-6">
+        <Button hierarchy="primary" className="mt-8">
           Download Resume
         </Button>
       </div>

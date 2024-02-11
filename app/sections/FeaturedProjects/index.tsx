@@ -4,22 +4,22 @@ import CustomContainer from "@/app/molecules/CustomContainer";
 import CustomText from "@/app/molecules/CustomText";
 import React from "react";
 
-import projects from "./projects.data";
+import projects from "./FeaturedProjects.data";
+import ProjectCards from "@/app/components/ProjectCards";
 import Bar from "@/app/molecules/Bar";
-import SidebarGallery from "@/app/components/SidebarGallery";
 
-const Projects = () => {
+const FeaturedProjects = () => {
   return (
     <CustomContainer id="projects">
-      <div className="mt-14 w-fit">
+      <div className="mx-auto w-fit text-center">
         <CustomText type="heading">Projects</CustomText>
         <Bar></Bar>
       </div>
       <div className="mt-10 lg:mt-16">
-        <SidebarGallery projects={projects}></SidebarGallery>
+        <ProjectCards type="default" data={projects}></ProjectCards>
       </div>
     </CustomContainer>
   );
 };
 
-export default Projects;
+export default FeaturedProjects;
