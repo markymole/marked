@@ -26,7 +26,7 @@ const Button = ({
   const ButtonElement = href ? "a" : "button";
 
   return (
-    <div className={twMerge("group relative mt-1 w-fit", className)}>
+    <div className={twMerge("group relative mt-1 h-full w-fit", className)}>
       <ButtonElement
         className={twMerge(buttonVariant({ hierarchy }))}
         href={href}

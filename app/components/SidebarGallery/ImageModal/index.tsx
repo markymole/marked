@@ -38,7 +38,7 @@ const ImageModal = ({ src, onClose }: ImageModalProps) => {
     >
       <div
         ref={modalRef}
-        className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 transform p-0 shadow-lg lg:w-2/3"
+        className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 transform p-0 shadow-lg md:w-11/12 lg:w-10/12 xl:w-2/3"
       >
         <button className="absolute right-4 top-4" onClick={onClose}>
           <IoCloseCircle className=" stroke-white text-amber-500 " size={30} />
