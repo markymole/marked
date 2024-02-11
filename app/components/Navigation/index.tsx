@@ -50,7 +50,7 @@ const Navigation = () => {
             <NavLink text="Home" href="/" onClick={() => setIsOpen(!isOpen)} />
             <NavLink
               text="About"
-              href="#about"
+              href="/#about"
               onClick={() => setIsOpen(!isOpen)}
             />
             <NavLink
@@ -60,7 +60,7 @@ const Navigation = () => {
             />
             <NavLink
               text="Contact"
-              href="#contact"
+              href="/#contact"
               onClick={() => setIsOpen(!isOpen)}
             />
             <li className="mt-4 font-karla font-light text-asphalt dark:text-white">

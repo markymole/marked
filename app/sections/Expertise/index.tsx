@@ -23,12 +23,12 @@ const Expertise = () => {
           type="description"
           className="mx-auto w-full text-center lg:w-10/12"
         >
-          Embarking on a journey of skill refinement and innovation. I&apos;ve
-          focused on making my development process efficient and effective,
-          honing essential skills across pivotal areas like front-end and
-          back-end development, API integration, and responsive design. Using
-          what I&apos;ve learned, I&apos;ve worked hard to make a real impact
-          online, creating websites and apps that leave a mark.
+          Throughout my career, I consistently apply the wisdom of this quote to
+          my journey as a developer. Through continuous engagement with diverse
+          tools and technologies, I aim to equip myself with expertise in both
+          front and back-end development. This commitment fuels my ability to
+          deliver excellent service and make a lasting impact in every project I
+          undertake
         </CustomText>
       </div>
       <div id="techstacks">

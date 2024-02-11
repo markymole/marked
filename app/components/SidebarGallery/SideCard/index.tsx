@@ -178,7 +178,7 @@ const SideCard = ({
         )}
         {link && !archived && (
           <Button href={link} hierarchy="primary" target="__blank">
-            Visit App
+            View live site
           </Button>
         )}
       </motion.div>
