@@ -6,7 +6,7 @@ const projects = [
       "The definitive web application for quick access to Kapampangan cuisines and delicacies! This platform serves as an open directory, simplifying the search for local Kapampangan food businesses and offering a seamless process for owners to apply for listings.",
     link: "https://www.minindal.com/",
     githubLink: "https://github.com/markymole/minindal",
-    techstacks: ["React", "Laravel", "Tailwind", "MySQL", "Google Maps API"],
+    techstacks: ["React", "Laravel", "Tailwind", "Google Maps API"],
     images: ["/images/projects/minindal.png"],
     featured: true,
     archived: false,
@@ -17,8 +17,8 @@ const projects = [
     description:
       "Developed in partnership with the Center for Kapampangan Studies, this web app addresses the challenge non-Kapampangans face in communicating with Kapampangan speakers. It's designed to be interactive, encouraging contributions to expand the language's vocabulary, making it an endless work in progress.",
     link: "https://kapampangancenter.org/kapampangantranslator/",
-    githubLink: "https://github.com/markymole/cks-glossary-files",
-    techstacks: ["PHP", "Jquery", "MySQL", "Bootstrap"],
+    githubLink: "https://github.com/markymole/kapampangan-translator",
+    techstacks: ["PHP", "jQuery", "MySQL", "Bootstrap"],
     images: ["/images/projects/kapampangan-translator.png"],
     featured: true,
     archived: false,
@@ -43,8 +43,8 @@ const projects = [
     description:
       "This custom-kanban inspired portal serves as the tracking control system of Enrod Copper Decor Products, that allows admin to monitor a purchase order status. Each product undergo different phases which are updated by a sub-admin.",
     link: "https://www.portal-ecdp.org",
-    githubLink: "https://github.com/markymole/ecdp-src",
-    techstacks: ["React", "Laravel", "Tailwind", "MySQL"],
+    githubLink: "https://github.com/markymole/ecdp",
+    techstacks: ["React", "Laravel", "Tailwind"],
     images: [
       "/images/projects/ecdp-login.png",
       "/images/projects/ecdp-dashboard.png",

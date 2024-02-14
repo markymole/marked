@@ -52,22 +52,26 @@ const ProjectCard = ({
           ))}
         </div>
         <div className="mt-4 flex items-center gap-2">
-          <Button
-            hierarchy="primary"
-            href={link}
-            target="__blank"
-            className="text-sm"
-          >
-            Visit App
-          </Button>
-          <Button
-            hierarchy="secondary"
-            href={githubLink}
-            target="__blank"
-            className="text-sm"
-          >
-            View Code
-          </Button>
+          {link && (
+            <Button
+              hierarchy="primary"
+              href={link}
+              target="__blank"
+              className="text-sm"
+            >
+              View live site
+            </Button>
+          )}
+          {githubLink && (
+            <Button
+              hierarchy="secondary"
+              href={githubLink}
+              target="__blank"
+              className="text-sm"
+            >
+              View Code
+            </Button>
+          )}
         </div>
       </div>
     </div>
