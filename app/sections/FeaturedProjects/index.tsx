@@ -14,7 +14,7 @@ const FeaturedProjects = () => {
     <CustomContainer id="projects">
       <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
         <div className="w-fit">
-          <CustomText type="heading">Projects</CustomText>
+          <CustomText type="heading">Featured Projects</CustomText>
           <Bar></Bar>
         </div>
         <Button hierarchy="primary" href="/projects">

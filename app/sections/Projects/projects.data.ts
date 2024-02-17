@@ -56,6 +56,24 @@ const projects = [
     archived: true,
     featuredImage: "/images/projects/ecdp-login.png",
   },
+  {
+    id: 4,
+    title: "SK APP",
+    description:
+      "The SK App is a centralized hub for barangays to create and share announcements, fostering efficient communication and engagement within communities.",
+
+    link: "",
+    githubLink: "https://github.com/markymole/sk-app",
+    techstacks: ["PHP", "jQuery", "Tailwind"],
+    images: [
+      "/images/projects/skapp-login.png",
+      "/images/projects/skapp-home.png",
+      "/images/projects/skapp-posts.png",
+    ],
+    featured: false,
+    archived: true,
+    featuredImage: "/images/projects/skapp-home.png",
+  },
 ];
 
 export default projects;
