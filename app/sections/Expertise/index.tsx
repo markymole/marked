@@ -23,12 +23,11 @@ const Expertise = () => {
           type="description"
           className="mx-auto w-full text-center lg:w-10/12"
         >
-          Throughout my career, I consistently apply the wisdom of this quote to
-          my journey as a developer. Through continuous engagement with diverse
-          tools and technologies, I aim to equip myself with expertise in both
-          front and back-end development. This commitment fuels my ability to
-          deliver excellent service and make a lasting impact in every project I
-          undertake
+          Ever since hearing it in &apos;3 Idiots,&apos; I&apos;ve adopted this
+          line as my motto, applying its wisdom to my journey as a developer.
+          Through continuous engagement with diverse tools and technologies, I
+          aim to equip myself with the necessary skills to deliver quality and
+          excellent outputs.
         </CustomText>
       </div>
       <div id="techstacks">

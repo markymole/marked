@@ -20,13 +20,12 @@ const Experience = () => {
             </span>
           </CustomText>
           <CustomText type="description">
-            My work experience encompasses both freelance web development,
-            volunteer work, and my current corporate role. In each endeavor,
-            I&apos;ve been driven by a relentless pursuit of excellence.
-            Alongside honing my technical skills in web development, I&apos;ve
-            devoted myself to preserving Kapampangan culture and heritage. This
-            dual commitment underscores my ongoing pursuit of mastery and my
-            aspiration to make a meaningful impact.
+            My work experience encompasses freelance web development, volunteer
+            work promoting and preserving Kapampangan culture with the Center
+            for Kapampangan Studies, and my current corporate role. In each
+            endeavor, I&apos;ve pursued learning and gaining valuable
+            experience. This commitment underscores my ongoing pursuit of
+            mastery and my aspiration to make a meaningful impact.
           </CustomText>
         </div>
         <div className="px-1 lg:col-span-1">

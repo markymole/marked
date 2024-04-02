@@ -4,7 +4,7 @@ export const workexperiencedata = [
     company: "Center for Kapampangan Studies",
     positon: "Web Developer",
     description:
-      "At the Centre for Kapampangan Studies, my internship as a Web Developer provided the opportunity to lead the development of the 'Kapampangan Translator' web app. Driven by a passion for technology and cultural preservation, this project aimed to overcome linguistic barriers while showcasing the richness of Kapampangan heritage. Through innovative approaches, it facilitated communication and celebrated our cultural legacy.",
+      "During my internship at the Centre for Kapampangan Studies, my team and I developed the Kapampangan Translator web app which is currently housed under the Center for Kapampangan Center website. This app aims to promote and preserve Kapampangan literature by providing users with Kapampangan translation of a given English/Filipino word.",
     duration: "Sep 2022 - Feb 2023",
   },
   {
@@ -12,7 +12,7 @@ export const workexperiencedata = [
     positon: "Freelance Web Developer",
     company: "N/A",
     description:
-      "While freelancing as a Web Developer during my studies, I collaborated on diverse projects, refining my skills in client communication and project management. Simultaneously, I am actively engaged in personal projects that leverage technology to promote and preserve Kapampangan culture. Through these initiatives, I aim to create impactful applications that showcase the richness of our heritage, combining my technical expertise with a deep commitment to cultural preservation.",
+      "During my college days, I began working as a freelance web developer, undertaking various projects. Subsequently, I am also working as a volunteer for the Center for Kapampangan Center - where I share my expertise in preserving and promoting Kapampangan heritage. One project we made was Minindal, a web directory hub for Kapampangan cuisine.",
     duration: "Jan 2021 - Present",
   },
   {
@@ -20,7 +20,7 @@ export const workexperiencedata = [
     positon: "Full-Stack Web Developer",
     company: "Fullstack HQ",
     description:
-      "Currently, I am a Fullstack Developer at Fullstack HQ, where I thrive on working with various projects and diverse tech stacks. This dynamic role allows me to continually expand my knowledge in web development, tackling new challenges and contributing to the growth of our digital solutions.",
+      "Currently, I am working as a web developer at FullstackHQ where I thrive on working with various projects and diverse tech stacks. This dynamic role allows me to continually expand my knowledge in web development, while also honing my interpersonal skills.",
     duration: "Sept 2023 - Present",
   },
 ];
