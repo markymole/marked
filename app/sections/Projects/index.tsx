@@ -18,10 +18,10 @@ const Projects = () => {
         Welcome to my projects page, where you can witness my ongoing journey of
         learning and growth. Each project showcased here reflects my dedication
         to expanding my skills, whether it&apos;s in front-end development,
-        back-end solutions, or a blend of both. From personal passion projects
-        to volunteer initiatives and paid endeavors, I&apos;ve embraced diverse
-        opportunities to refine my craft. Explore this collection to see how
-        I&apos;ve progressed and evolved as a developer.
+        back-end solutions, or a blend of both. From personal projects to
+        volunteer initiatives and paid work, I have taken advantage of various
+        opportunities to improve my skills. Explore this collection to see how
+        I've progressed and grown as a developer.
       </CustomText>
       <div className="mt-10 lg:mt-16">
         <SidebarGallery projects={projects}></SidebarGallery>
