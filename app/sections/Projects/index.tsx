@@ -21,7 +21,7 @@ const Projects = () => {
         back-end solutions, or a blend of both. From personal projects to
         volunteer initiatives and paid work, I have taken advantage of various
         opportunities to improve my skills. Explore this collection to see how
-        I've progressed and grown as a developer.
+        I&apos;ve progressed and grown as a developer.
       </CustomText>
       <div className="mt-10 lg:mt-16">
         <SidebarGallery projects={projects}></SidebarGallery>
