@@ -5,7 +5,7 @@ import Tag from "@/app/molecules/Tag";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AnimatePresence, motion, useSpring } from "framer-motion";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { BsGlobeAsiaAustralia } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import { IoArrowBackCircleSharp } from "react-icons/io5";
@@ -43,6 +43,28 @@ const SideCard = ({
     snap: true,
   };
 
+  const sliderRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        sliderRef.current &&
+        !sliderRef.current.contains(event.target as Node) &&
+        !document.querySelector(".image-modal")?.contains(event.target as Node)
+      ) {
+        if (onClick) {
+          onClick();
+        }
+      }
+    };
+
+    document.body.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.body.removeEventListener("click", handleClickOutside);
+    };
+  }, [onClick]);
+
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -64,6 +86,7 @@ const SideCard = ({
         animate={{ x: 0 }}
         exit={{ x: "100%" }}
         transition={{ duration: 0.4 }}
+        ref={sliderRef}
         className=" flex h-full w-full flex-col gap-8 overflow-y-auto bg-white p-4 dark:border-gray-300/50 dark:bg-asphalt md:max-w-xl md:border-l xl:p-8"
       >
         <div

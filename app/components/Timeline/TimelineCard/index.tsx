@@ -3,13 +3,7 @@
 import CustomText from "@/app/molecules/CustomText";
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
-import {
-  motion,
-  useMotionValue,
-  useMotionValueEvent,
-  useScroll,
-  useSpring,
-} from "framer-motion";
+import { motion, useInView, useScroll, useSpring } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 
 interface timelineProps {
@@ -20,14 +14,30 @@ interface timelineProps {
   duration: string;
 }
 
-const TimelineCard = ({
-  title,
-  position,
-  company,
-  description,
-  duration,
-}: timelineProps) => {
+const TimelineCard = ({ title, description, duration }: timelineProps) => {
   const ref = useRef(null);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 1 },
+    );
+
+    const currentRef = ref.current;
+
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -63,7 +73,12 @@ const TimelineCard = ({
         transition={{ duration: 0.5, delay: 0.1 }}
         viewport={{ once: true }}
       >
-        <div className="relative z-10 flex flex-col gap-4 rounded-lg border border-gray-300 bg-white p-4 shadow-lg transition-all duration-200 ease-out hover:-translate-y-1.5 hover:translate-x-1.5 hover:cursor-default hover:border-amber-500 dark:bg-asphalt md:p-8 ">
+        <div
+          className={twMerge(
+            "relative z-10 flex flex-col gap-4 rounded-lg border border-gray-300 bg-white p-4 shadow-lg transition-all duration-200 ease-out  hover:cursor-default hover:border-amber-500 dark:bg-asphalt md:p-8",
+            isVisible ? "-translate-y-1.5 translate-x-1.5" : "",
+          )}
+        >
           <div className="flex flex-wrap items-center justify-between">
             <h5 className="font-karla text-lg font-semibold leading-6 dark:text-white md:text-xl">
               {title}

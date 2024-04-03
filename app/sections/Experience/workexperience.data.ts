@@ -16,8 +16,8 @@ export const workexperiencedata = [
     duration: "Jan 2021 - Present",
   },
   {
-    title: "Full-Stack Web Developer",
-    positon: "Full-Stack Web Developer",
+    title: "Web Developer at FullstackHQ",
+    positon: "Web Developer",
     company: "Fullstack HQ",
     description:
       "Currently, I am working as a web developer at FullstackHQ where I thrive on working with various projects and diverse tech stacks. This dynamic role allows me to continually expand my knowledge in web development, while also honing my interpersonal skills.",

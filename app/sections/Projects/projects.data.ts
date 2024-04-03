@@ -48,7 +48,11 @@ const projects = [
     link: "https://www.minindal.com/",
     githubLink: "https://github.com/markymole/minindal",
     techstacks: ["React", "Laravel", "Tailwind", "Google Maps API"],
-    images: ["/images/projects/minindal.png"],
+    images: [
+      "/images/projects/minindal.png",
+      "/images/projects/minindal-explore.png",
+      "/images/projects/minindal-dashboard.png",
+    ],
     featured: true,
     archived: false,
     featuredImage: "/images/projects/minindal.png",

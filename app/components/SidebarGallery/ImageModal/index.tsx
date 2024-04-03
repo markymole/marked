@@ -34,7 +34,7 @@ const ImageModal = ({ src, onClose }: ImageModalProps) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed left-0 top-0 h-full w-full bg-gray-200/50 backdrop-blur-sm"
+      className="image-modal fixed left-0 top-0 h-full w-full bg-gray-200/50 backdrop-blur-sm"
     >
       <div
         ref={modalRef}
