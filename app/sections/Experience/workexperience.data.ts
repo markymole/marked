@@ -21,7 +21,7 @@ export const workexperiencedata = [
     company: "N/A",
     description:
       "At the Center for Kapampangan Studies, I dedicated my time to meaningful projects aimed at promoting and preserving Kapampangan culture and heritage. One of our significant endeavors was the development of Minindal, a web application and its CMS. Minindal aims to streamline the search for authentic Kapampangan cuisine.",
-    duration: "Jan 2021 - Present",
+    duration: "Sep 2022 - Present",
   },
   {
     title: "Web Developer, FullstackHQ",
