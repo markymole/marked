@@ -31,13 +31,18 @@ const index = () => {
           developer and gave me some hands-on experience.
           <br />
           <br />
-          Nowadays, I work as a web developer at Fullstack HQ. I get to work on
+          Currently, I work as a web developer at Fullstack HQ. I get to work on
           a wide range of projects, where I contribute to diverse teams and
           explore innovative solutions. This hands-on experience allows me to
           continuously grow and stay updated with the latest trends in the
           field.
         </CustomText>
-        <Button hierarchy="primary" className="mt-8">
+        <Button
+          hierarchy="primary"
+          className="mt-8"
+          target="__blank"
+          href="/mark-raphael-nuguid-resume.pdf"
+        >
           Download Resume
         </Button>
       </div>

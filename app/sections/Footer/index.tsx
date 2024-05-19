@@ -9,12 +9,12 @@ const Footer = () => {
       <div className="flex flex-col items-center justify-between gap-10 md:flex-row md:gap-0">
         <Socials></Socials>
         <p className="hidden font-outfit text-sm text-asphalt dark:text-white md:block">
-          Get <span className="font-semibold dark:text-amber-500">Marked</span>,
-          Elevate Your Presence | Copyright 2024.
+          Get <span className="font-semibold dark:text-amber-500">Marked </span>
+          | Copyright 2024.
         </p>
         <p className="block text-center font-outfit text-sm text-asphalt dark:text-white md:hidden">
-          Get <span className="font-semibold dark:text-amber-500">Marked</span>,
-          Elevate Your Presence <br /> Copyright 2024.
+          Get <span className="font-semibold dark:text-amber-500">Marked </span>
+          <br /> Copyright 2024.
         </p>
       </div>
     </CustomContainer>

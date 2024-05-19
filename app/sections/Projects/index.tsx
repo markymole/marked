@@ -15,13 +15,10 @@ const Projects = () => {
         <CustomText type="heading">Projects</CustomText> <Bar></Bar>
       </div>
       <CustomText type="description" className="xl:w-2/3">
-        Welcome to my projects page, where you can witness my ongoing journey of
-        learning and growth. Each project showcased here reflects my dedication
-        to expanding my skills, whether it&apos;s in front-end development,
-        back-end solutions, or a blend of both. From personal projects to
-        volunteer initiatives and paid work, I have taken advantage of various
-        opportunities to improve my skills. Explore this collection to see how
-        I&apos;ve progressed and grown as a developer.
+        Dive into my portfolio and explore the projects that mark my journey of
+        continuous learning and growth as a developer. From front-end designs to
+        robust back-end solutions, each project showcases my dedication to
+        mastering various aspects of web development.
       </CustomText>
       <div className="mt-10 lg:mt-16">
         <SidebarGallery projects={projects}></SidebarGallery>

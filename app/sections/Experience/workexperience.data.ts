@@ -1,26 +1,34 @@
 export const workexperiencedata = [
   {
-    title: "Kapampangan Center OJT",
+    title: "Web Developer Intern, CKS",
     company: "Center for Kapampangan Studies",
     positon: "Web Developer",
     description:
-      "During my internship at the Centre for Kapampangan Studies, my team and I developed the Kapampangan Translator web app which is currently housed under the Center for Kapampangan Center website. This app aims to promote and preserve Kapampangan literature by providing users with Kapampangan translation of a given English/Filipino word.",
+      "In my internship at the Center for Kapamapangan Studies, my team and I created the web app Kapampangan Translator, along with its CMS. The application aims to foster collaboration and contribution, creating an interactive platform that facilitates the expansion of the Kapampangan vocabulary.",
     duration: "Sep 2022 - Feb 2023",
   },
   {
-    title: "Freelance/Volunteer Web Developer",
+    title: "Freelance Web Developer",
     positon: "Freelance Web Developer",
     company: "N/A",
     description:
-      "During my college days, I began working as a freelance web developer, undertaking various projects. Subsequently, I am also working as a volunteer for the Center for Kapampangan Center - where I share my expertise in preserving and promoting Kapampangan heritage. One project we made was Minindal, a web directory hub for Kapampangan cuisine.",
+      "I began freelancing during college, taking on various projects that spanned from front-end development to full-fledged applications, with Laravel and React as my core technologies. Some of the projects I undertook included front-end website development, management systems, and creating custom web applications.",
+    duration: "Jan 2021 - Dec 2023",
+  },
+  {
+    title: "Volunteer Web Developer, CKS",
+    positon: "Volunter Web Developer",
+    company: "N/A",
+    description:
+      "At the Center for Kapampangan Studies, I dedicated my time to meaningful projects aimed at promoting and preserving Kapampangan culture and heritage. One of our significant endeavors was the development of Minindal, a web application and its CMS. Minindal aims to streamline the search for authentic Kapampangan cuisine.",
     duration: "Jan 2021 - Present",
   },
   {
-    title: "Web Developer at FullstackHQ",
+    title: "Web Developer, FullstackHQ",
     positon: "Web Developer",
     company: "Fullstack HQ",
     description:
       "Currently, I am working as a web developer at FullstackHQ where I thrive on working with various projects and diverse tech stacks. This dynamic role allows me to continually expand my knowledge in web development, while also honing my interpersonal skills.",
-    duration: "Sept 2023 - Present",
+    duration: "Aug 2023 - Present",
   },
 ];

@@ -17,7 +17,7 @@ const index = () => {
           <span className="text-amber-500 underline">web developer</span>
         </CustomText>
         <CustomText type="description">
-          I specialize in crafting bespoke websites and web applications
+          I specialize in crafting bespoke websites, web and mobile applications
           tailored to your needs. Whether you need a marketing website with
           integrated CMS to establish your online presence, a web application to
           streamline your business processes, or responsive development to
